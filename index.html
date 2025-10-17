@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Profile Card</title>
+</head>
+<body>
+  <article data-testid="test-profile-card" class="card">
+    <section class="profile">
+
+      <figure>
+        <img 
+          src="sossadadeveloper.jpg" 
+          alt="An avatar of SossaDadeveloper"
+          data-testid="test-user-avatar"
+        />
+        <figcaption>Frontend Developer</figcaption>
+      </figure>
+
+      <div class="info">
+        <h2 data-testid="test-user-name">SossaDadeveloper</h2>
+        <p data-testid="test-user-bio" class="bio">
+          A passionate developer who loves creating web applications and exploring new technologies.
+        </p>
+        <p data-testid="test-user-time" id="time"></p>
+      </div>
+
+    </section>
+
+    <section class="socials">
+        <h3>Socials</h3>
+        <nav data-testid="test-user-social-links">
+          <p data-testid="test-user-social-twitter"><a href="https://github.com/SossaDadeveloper" target="_blank" rel="noopener noreferrer">Github</a></p>
+          <p data-testid="test-user-social-linkedin"><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          <p data-testid="test-user-social-instagram"><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+        </nav>
+    </section>
+
+    <section class="hobbies">
+      <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Eating</li>
+          <li>Watching anime</li>
+        </ul>
+    </section>
+
+    <section class="dislikes">
+      <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Bugs</li>
+          <li>More Bugggsss</li>
+          <li>Mahito</li>
+        </ul>
+    </section>    
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
