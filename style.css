@@ -33,7 +33,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  flex-wrap: wrap; /* still responsive, but controlled */
+  flex-wrap: wrap; 
 }
 .bio{
   color: gray;
@@ -100,7 +100,7 @@ img{
   outline-offset: 3px;
 }
 
-/*Hobbie*/
+/*Hobbies*/
 .hobbies{
   margin-top: 20px;
   margin-left: 3rem;
