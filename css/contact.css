@@ -1,0 +1,145 @@
+
+/*Contact Styles*/
+.contact-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/*Left Section*/
+.contact-header-section{
+  flex: 1;
+  padding-right: 1rem;
+}
+.contact-header-section h1{
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.intro-text{
+  color: #333;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/*Right Section*/
+.contact-form-section{
+  flex: 1;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgb(173, 178, 184);
+}
+.contact-form-section h2{
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+.contact-form-section p{
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.form-group label{
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 0.3rem;
+}
+
+input, textarea {
+  font-family: Poppins, sans-serif;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2563eb; /* blue accent */
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  background-color: #fff;
+}
+input::placeholder, textarea::placeholder {
+  font-family: Poppins, sans-serif;}
+
+textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.contact-form-section button {
+  background-color: #3ba4d9;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-form-section button:hover {
+  background-color: #2563eb;
+}
+
+.error{
+  font-size: 0.8rem;
+  color: #dc2626;
+  margin-top: 0.3rem;
+}
+
+
+/*Contact Us Page Responsive*/
+/*Tablet and small laptops*/
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-header-section h1{
+    margin-bottom: .25rem;
+  }
+
+  .intro-text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .contact-form-section {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  label{
+    text-align: left;
+  }
+}
+
+/*Mobile Devices*/
+@media (max-width: 500px) {
+  .contact-header-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-form-section {
+    padding: 1rem;
+  }
+
+  .intro-text {
+    font-size: 13px;
+  }
+}

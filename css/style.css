@@ -5,15 +5,35 @@
 }
 
 body {
-  background: #3ba4d9;
-  background: linear-gradient(0deg,rgba(59, 164, 217, 0.8) 21%, rgba(59, 201, 217, 0.67) 54%);
+  background: #E6F0FF;
   padding-top: 3rem;
   padding-bottom: 3rem;
   font-family: "Poppins", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+/*Header Styles*/
+header{
+  display: flex;
+  margin-bottom: 2rem;
+  position: static;
+  justify-content: center;
+}
+header ul{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+header a{
+  text-decoration: none;
+}
+header a:hover{
+  color: #3cbeff;
+  transition: all .3s ease-in-out;
 }
 
 .card {
@@ -52,7 +72,7 @@ figcaption{
   font-weight: 600;
   white-space: nowrap;
 }
-img{
+.avatar{
   width: 120px;
   max-width: 150px;
   aspect-ratio: 1 / 1;

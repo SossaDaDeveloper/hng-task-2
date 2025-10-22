@@ -1,0 +1,279 @@
+body{
+  padding: 2rem;
+  overflow-x: hidden;
+}
+h2{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+p, li{
+  color: #333;
+}
+.bio-text p, .goals-section p, .confidence-section p, .future-note-section p, .extra-thoughts-section p{
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+/*Bio Section*/
+.bio-section{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  background-color: #dfdddd;
+  padding: 3rem 4rem; 
+  border-radius: 35px;
+  margin-bottom: 3rem;
+}
+.bio-text{
+  flex: 1;
+}
+.bio-text h2{
+  margin-top: 1rem;
+}
+.bio-image{
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+}
+.bio-image img{
+  width: 100%;
+  border-radius: 25px;
+}
+
+/*Goal Section*/
+.goals-section{
+  padding: 3rem 4rem; 
+  border-radius: 35px;
+}
+.goals-section p{
+  margin-bottom: 4rem;
+}
+.goals-list{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 60px;
+  padding: 0;
+  margin: 0 auto;
+}
+.goals-list li{
+  background-color: #FFEFD5;
+  border: 1px solid #ccc;
+  width: 150px;
+  height: 150px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  padding: .75rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/*Confidence Section*/
+.confidence-section{
+  display: flex;
+  padding: 3rem 4rem; 
+  border-radius: 35px;
+  gap: 50px;
+  background-color: #dfdddd;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.confidence-text{
+  flex: 1;
+}
+.confidence-list{
+  flex: 1;
+}
+.confidence-list li{
+  margin-bottom: 2rem;
+}
+
+/*Future Note Section*/
+.future-note-section{
+  padding: 3rem 4rem; 
+}
+.flashcards-container{
+  perspective: 1000px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.flashcard{
+  width: 200px;
+  height: 200px;
+  background-color: #fffb7d; 
+  padding: 15px;
+  box-shadow: 3px 5px 15px rgba(0,0,0,0.3); 
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  transform: rotate(-2deg); 
+  position: relative;
+  margin: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.flashcard:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 6px 10px 20px rgba(0,0,0,0.4);
+}
+
+.flashcard::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #ff4b4b;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+
+
+/*Extra Thoughts Section*/
+.extra-thoughts-section{
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Patrick Hand', cursive
+}
+.extra-thoughts-section h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.thoughts{
+  background-color: #fffbe6;
+  border: 1px solid #e0d4b7;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+  line-height: 1.6;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.thoughts:nth-child(odd) {
+  transform: rotate(-1.5deg);
+}
+.thoughts:nth-child(even) {
+  transform: rotate(1.5deg);
+}
+.thoughts:hover {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow: 4px 8px 12px rgba(0,0,0,0.2);
+}
+
+
+
+/*Responsive Design*/
+/*Below 1024px: Tablets / Small Laptops*/
+@media (max-width: 1024px) {
+ 
+  /*Bio Section*/
+  .bio-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio-text, .bio-image {
+    width: 100%;
+  }
+
+  .bio-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .bio-text p {
+    font-size: 0.95rem;
+  }
+
+  .bio-image {
+    margin-top: 20px;
+  }
+
+  /*Confidence Section*/
+  .confidence-section {
+    flex-direction: column;
+  }
+
+  .confidence-text,
+  .confidence-list {
+    width: 100%;
+  }
+
+  /*Note to Future Section*/
+  .flashcards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+/*Below 768px - Small Tablets*/
+@media (max-width: 768px) {
+  .bio-text h2 {
+    font-size: 2rem;
+  }
+
+  .bio-text p,
+  .goals-section p,
+  .goals-list li {
+    font-size: 0.9rem;
+  }
+  .goals-list{
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  .goals-list li{
+    flex: 1 1 calc(50% - 20px);
+    max-width: 200px;
+  }
+  .goals-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .flashcard {
+    padding: 15px;
+  }
+
+  .thoughts {
+    padding: 15px;
+  }
+}
+
+/*Below 500px - Mobile Devices*/
+@media (max-width: 500px) {
+  .bio-section {
+    padding: 20px 10px;
+  }
+
+  .bio-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .bio-text p {
+    font-size: 0.85rem;
+  }
+
+  .goals-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .goals-section p,
+  .goals-list li {
+    font-size: 0.85rem;
+  }
+
+  .flashcard {
+    padding: 10px;
+  }
+
+  .thoughts {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+}
