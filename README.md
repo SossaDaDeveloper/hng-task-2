@@ -1,15 +1,15 @@
-# Profile Card
+# Task 2
 
-A simple responsive profile card built with **HTML**, **CSS**, and **JavaScript**.
+A simple responsive profile card, about page and contact page built with **HTML**, **CSS**, and **JavaScript**.
 
 ## Live Demo
- [View the live site here](https://SossaDaDeveloper.github.io/profile-card/)
+ [View the live site here](https://sossadadeveloper.github.io/hng-task-2/)
 
 ## Repository
- [GitHub Repo](https://github.com/SossaDaDeveloper/profile-card)
+ [GitHub Repo](https://github.com/SossaDaDeveloper/hng-task-2)
 
-#About and Contact 
-This project contains the **About Me** and **Contact** pages built as part of my web development assignment.  
+##About and Contact 
+This project also contains the **About Me** and **Contact** pages.  
 It demonstrates clean HTML structure, CSS styling (including responsiveness), and basic form validation using JavaScript.
 
 ##  Technologies Used
@@ -24,7 +24,7 @@ It demonstrates clean HTML structure, CSS styling (including responsiveness), an
 ##  How to Run Locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com/SossaDaDeveloper/profile-card.git
+   git clone https://github.com/SossaDaDeveloper/hng-task-2.git
 
 2. Navigate into the project folder
    ```bash
